@@ -18,7 +18,7 @@ input_file.close()
 encrypted_text= clear_text.decode('rot13')
 
 # Output the modified xml-file to a separate folder in the Storage Blob
-output_file = open(os.environ['outputBlob'], 'w')
+output_file = open(os.environ['outputBlob'], 'wb')
 output_file.write(encrypted_text)
 output_file.close()
 
